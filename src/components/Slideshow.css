@@ -1,0 +1,51 @@
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    width: 100vw; /* Set the width to 100vw for full window width */
+    max-width: 100%; /* Ensure images fit within the window width */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center;
+    
+  }
+  
+ /* Slideshow Image */
+.slideshow-image {
+    width: 100%;
+    height: 400px; /* Set a specific height for the image */
+    object-fit: cover;
+    position: relative; /* Relative positioning for absolute dots */
+  }
+  
+/* Slideshow Dots Container */
+.slideshow-dots {
+    position: absolute; /* Absolute positioning for the dots */
+    bottom: 10px; /* Adjust the distance from the bottom of the image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    text-align: center;
+    background-color: transparent; /* Remove the background */
+  }
+  
+  /* Slideshow Dot */
+  .slideshow-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+  }
+  
+  /* Active Dot */
+  .slideshow-dot.active {
+    background-color: #007BFF;
+  }
+  
+  /* Hover Effect for Dots (Optional) */
+  .slideshow-dot:hover {
+    background-color: #555;
+  }
+  
+  

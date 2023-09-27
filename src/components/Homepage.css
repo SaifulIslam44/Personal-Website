@@ -1,0 +1,110 @@
+/* src/components/Homepage.css */
+
+/* Style for the main container */
+div {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 0px;
+  }
+  
+/* Style for the heading */
+h1 {
+    font-size: 30px;
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: 0px solid rgba(0, 127, 211, 0.74); /* Transparent border with 50% opacity */
+    padding: 0px; /* Add some padding to the title */
+    background-color: rgba(0, 0, 0, 1); /* Full black background */
+    color: rgb(0, 0, 0); /* Initial text color (black) */
+    overflow: hidden; /* Hide the overflow of the animated element */
+    animation: rgbLighting 10s infinite; /* Apply the RGB lighting animation */
+  }
+
+  @keyframes rgbLighting {
+    0% {
+      color: rgb(235, 43, 43); /* Red */
+    }
+    25% {
+      color: rgb(169, 194, 30); /* Yellow */
+    }
+    50% {
+      color: rgb(74, 226, 150); /* Green */
+    }
+    75% {
+      color: rgba(13, 122, 150, 0.568); /* Cyan */
+    }
+    100% {
+      color: rgb(255, 60, 0); /* Magenta */
+    }
+  }
+  
+  /* Animation for sliding in the title text */
+  .title-container {
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically align items in the center */
+    height: 100px; /* Adjust the height as needed to vertically center the title text and logos */
+    background-color: #000000;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+/* Style for the title text */
+.title-text {
+    display: flex;
+    align-items: center; /* Vertically align items in the center */
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s; /* Delay the animation by 0.5 seconds */
+    animation-fill-mode: forwards;
+    position: relative; /* Set the position to relative */
+    background-color: black; /* Set the background color to black */
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    100% {
+      transform: translateX(0); /* Slide in to the center */
+    }
+  }
+
+
+  .left-logo,
+.right-logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 100px; /* Adjust the margin for spacing between the logos and text */
+}
+
+  
+ /*Header Home and contact button CSS */
+ .header-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+  margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.button {
+  background-color: #0074cc;
+  color: #fff;
+  flex-grow: 1; /* Make the button grow to fill available space */
+  padding: 10px 0; /* Remove horizontal padding */
+  margin: 0; /* Remove the left margin */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0058a3;
+}
+
+
+
+
+/* Categories Menu:  */
